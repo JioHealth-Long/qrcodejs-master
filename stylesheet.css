@@ -1,0 +1,89 @@
+@media print {
+    .for-print {
+        display: block !important;
+    }
+    .so-footer-bar, .order-detail, .fixed-bottom, .content-header, .no-print, .jio-toast__container, .jio-toast__content-box, .modal-backdrop, .back {
+        display: none !important;
+    }
+    .page .content {
+        padding: 0 !important;
+        background: #fff !important;
+        min-height: 0;
+    }
+    .purchase-order__detail.app-order-status .icon {
+        display: none;
+    }
+    .purchase-order__detail .content-header .text-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .purchase-order__detail .tb-po-product th {
+        width: 10%;
+    }
+    .modal-content {
+        border: none;
+    }
+    .modal-print-qr-code .modal-dialog {
+        max-width: 100vw;
+    }
+    .print-qr-code-page .three-mm {
+        height: 3mm;
+    }
+    .print-qr-code-page .items-wrapper {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 162mm;
+    }
+    .col-print-1 {
+        width: 8%;
+        float: left;
+    }
+    .col-print-2 {
+        width: 16%;
+        float: left;
+    }
+    .col-print-3 {
+        width: 25%;
+        float: left;
+    }
+    .col-print-4 {
+        width: 33%;
+        float: left;
+    }
+    .col-print-5 {
+        width: 42%;
+        float: left;
+    }
+    .col-print-6 {
+        width: 50%;
+        float: left;
+    }
+    .col-print-7 {
+        width: 58%;
+        float: left;
+    }
+    .col-print-8 {
+        width: 66%;
+        float: left;
+    }
+    .col-print-9 {
+        width: 75%;
+        float: left;
+    }
+    .col-print-10 {
+        width: 83%;
+        float: left;
+    }
+    .col-print-11 {
+        width: 92%;
+        float: left;
+    }
+    .col-print-12 {
+        width: 100%;
+        float: left;
+    }
+    .pagebreak {
+        page-break-after: always;
+    }
+}
+
