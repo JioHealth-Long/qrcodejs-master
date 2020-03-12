@@ -14,13 +14,44 @@
 <body>
 <section class="container">
     <div>
-        <div class="item-print" id="print-qr-code-page">
-            <div class="col-print-3 position-relative">
-                <div class="item">
-                    <p class="name">GS2 name</p>
-                    <div id="qrcode" style="width:45px; height:45px; margin-top:15px;"></div>
-                    <div class="item-left">
-                    <!-- add more info -->
+        <div class="is-print" id="print-qr-code-page">
+            <div class="row">
+                <div class="col-print-3 position-relative">
+                    <div class="item">
+                        <p class="name">GS2 name</p>
+                        <div id="qrcode1" style="width:45px; height:45px; margin-top:15px;"></div>
+                        <div class="item-left">
+                            <!-- add more info -->
+                            <p>ABC</p>
+                            <p>ABC</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="name">GS2 name</p>
+                        <div id="qrcode2" style="width:45px; height:45px; margin-top:15px;"></div>
+                        <div class="item-left">
+                            <!-- add more info -->
+                            <p>ABC</p>
+                            <p>ABC</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="name">GS2 name</p>
+                        <div id="qrcode3" style="width:45px; height:45px; margin-top:15px;"></div>
+                        <div class="item-left">
+                            <!-- add more info -->
+                            <p>ABC</p>
+                            <p>ABC</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="name">GS2 name</p>
+                        <div id="qrcode4" style="width:45px; height:45px; margin-top:15px;"></div>
+                        <div class="item-left">
+                            <!-- add more info -->
+                            <p>ABC</p>
+                            <p>ABC</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,34 +77,4 @@
     </div>
 </section>
 <script type="text/javascript" src="index.js"></script>
-
-<!--<script type="text/javascript">-->
-<!--    var qrcode = new QRCode(document.getElementById("qrcode"), {-->
-<!--        width: 45,-->
-<!--        height: 45-->
-<!--    });-->
-
-<!--    function makeCode() {-->
-<!--        var elText = document.getElementById("stock");-->
-<!--        let batchNumber = document.getElementById("batch-number");-->
-
-<!--        if (!elText.value) {-->
-<!--            alert("Input a text");-->
-<!--            elText.focus();-->
-<!--            return;-->
-<!--        }-->
-
-<!--        qrcode.makeCode(`${elText.value}_${batchNumber}`);-->
-<!--    }-->
-
-<!--    makeCode();-->
-
-<!--    $(document).on("blur", "#stock #batch-number", function () {-->
-<!--        makeCode();-->
-<!--    }).on("keydown", function (e) {-->
-<!--        if (e.keyCode === 13) {-->
-<!--            makeCode();-->
-<!--        }-->
-<!--    });-->
-<!--</script>-->
 </body>

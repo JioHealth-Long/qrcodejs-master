@@ -86,4 +86,54 @@
         page-break-after: always;
     }
 }
+.is-print {
+    font-family: Arial;
+    color: #000;
+    height: calc(100vh - 500px);
+    overflow-y: scroll;
+    display: grid;
+    justify-content: center;
+    background-color: #495057;
+}
+.row {
+    width: 164mm;
+    margin: 1mm;
+    height: 22mm;
+    background-color: white;
+}
+.row .col-print-3 {
+    width: calc(25% - 2mm);
+}
+.row .col-print-3.add-2 {
+    width: calc(25% + 2mm);
+}
+.row .item {
+    top: 5px;
+    left: 12px;
+    width: calc(100% - 5mm);
+}
+.row .item.left-0 {
+    left: -10px;
+}
+.row .item.item-2 {
+    left: -10px;
+}
+.row .item.last {
+    left: -21px;
+    right: calc(1mm + 25px);
+}
+.row .item .item-left {
+    position: absolute;
+    left: 58px;
+    top: 21px;
+}
+.row .item .item-left p {
+    margin-bottom: 0;
+}
+.row .prefix {
+    margin-top: 3px;
+}
 
+.row .position-relative {
+    display: inline-block;
+}

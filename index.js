@@ -1,7 +1,19 @@
 /**
  * Document ready
  */
-var qrcode = new QRCode(document.getElementById("qrcode"), {
+var qrcode1 = new QRCode(document.getElementById("qrcode1"), {
+    width: 45,
+    height: 45
+});
+var qrcode2 = new QRCode(document.getElementById("qrcode2"), {
+    width: 45,
+    height: 45
+});
+var qrcode3 = new QRCode(document.getElementById("qrcode3"), {
+    width: 45,
+    height: 45
+});
+var qrcode4 = new QRCode(document.getElementById("qrcode4"), {
     width: 45,
     height: 45
 });
@@ -16,7 +28,10 @@ function makeCode() {
         return;
     }
 
-    qrcode.makeCode(`${stockIdEle.value}*${batchNumber.value}`);
+    qrcode1.makeCode(`${stockIdEle.value}*${batchNumber.value}`);
+    qrcode2.makeCode(`${stockIdEle.value}*${batchNumber.value}`);
+    qrcode3.makeCode(`${stockIdEle.value}*${batchNumber.value}`);
+    qrcode4.makeCode(`${stockIdEle.value}*${batchNumber.value}`);
 }
 
 makeCode();
