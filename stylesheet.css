@@ -10,7 +10,7 @@
         background: #fff !important;
         min-height: 0;
     }
-    .purchase-order__detail.app-order-status .icon {
+    .purchase-order__detail .app-order-status .icon {
         display: none;
     }
     .purchase-order__detail .content-header .text-header {
@@ -82,12 +82,16 @@
         width: 100%;
         float: left;
     }
+}
+@media print {
+    /* page-break-after works, as well */
     .pagebreak {
         page-break-after: always;
     }
 }
+
 .is-print {
-    font-family: Arial;
+    font-family: Arial, serif;
     color: #000;
     height: calc(100vh - 500px);
     overflow-y: scroll;
@@ -102,10 +106,12 @@
     background-color: white;
 }
 .row .col-print-3 {
-    width: calc(25% - 2mm);
+    width: calc(24% - 2mm);
+    margin-left: 9px;
+    margin-top: 6px;
 }
 .row .col-print-3.add-2 {
-    width: calc(25% + 2mm);
+    width: calc(24% + 2mm);
 }
 .row .item {
     top: 5px;
@@ -136,4 +142,16 @@
 
 .row .position-relative {
     display: inline-block;
+}
+
+p.name {
+    font-size: 9px;
+    line-height: 1;
+    text-decoration: none;
+    overflow: hidden;
+    max-height: 16px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-word;
+    margin-bottom: 3px;
 }
